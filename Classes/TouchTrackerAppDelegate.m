@@ -7,6 +7,7 @@
 //
 
 #import "TouchTrackerAppDelegate.h"
+#import "TouchDrawView.h"
 
 @implementation TouchTrackerAppDelegate
 
@@ -19,7 +20,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
-    
+	NSString *linePath = [self lineArrayPath];
+	
+	NSMutableArray *lineArray = [NSKeyedUnarchiver unarchiveObjectWithFile:linePath];
+	
+	NSCoder *c = [[NSCoder alloc] init];
+	
+	if (!lineArray) {
+		UIView *view = [[TouchDrawView alloc] initWithCoder:c];
+		//[[self view] initWithCoder:c withLineArray:lineArray];
+	} else {
+		UIView *view = [[TouchDrawView alloc] initWithCoder:c withLineArray:lineArray];
+		//[[self view] initWithCoder:c];
+	}
+
+	
+	    
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -55,13 +71,27 @@
      */
 }
 
+#pragma mark -
+#pragma mark Saving and restoring methods
+
+- (NSString *)lineArrayPath
+{
+	return pathInDocumentDirectory(@"Lines.data");
+}
+
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     /*
      Called when the application is about to terminate.
      See also applicationDidEnterBackground:.
      */
+	
+	NSString *linePath = [self lineArrayPath];
+	NSMutableArray *lineArray = [[self view] completedLines];
+	
+	[NSKeyedArchiver archiveRootObject:lineArray toFile:linePath];
 }
+
 
 
 #pragma mark -

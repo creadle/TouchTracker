@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1714888512BC1A620086FE24 /* TouchDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714888412BC1A620086FE24 /* TouchDrawView.m */; };
 		1714888812BC1A710086FE24 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 1714888712BC1A710086FE24 /* Line.m */; };
+		178F52AF12C1D04100E4A585 /* FileHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 178F52AE12C1D04100E4A585 /* FileHelpers.m */; };
 		1D3623260D0F684500981E51 /* TouchTrackerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TouchTrackerAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -22,6 +23,8 @@
 		1714888412BC1A620086FE24 /* TouchDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchDrawView.m; sourceTree = "<group>"; };
 		1714888612BC1A710086FE24 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
 		1714888712BC1A710086FE24 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		178F52AD12C1D04100E4A585 /* FileHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHelpers.h; sourceTree = "<group>"; };
+		178F52AE12C1D04100E4A585 /* FileHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHelpers.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* TouchTrackerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchTrackerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* TouchTrackerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchTrackerAppDelegate.m; sourceTree = "<group>"; };
@@ -55,6 +58,8 @@
 				1D3623250D0F684500981E51 /* TouchTrackerAppDelegate.m */,
 				1714888312BC1A620086FE24 /* TouchDrawView.h */,
 				1714888412BC1A620086FE24 /* TouchDrawView.m */,
+				178F52AD12C1D04100E4A585 /* FileHelpers.h */,
+				178F52AE12C1D04100E4A585 /* FileHelpers.m */,
 				1714888612BC1A710086FE24 /* Line.h */,
 				1714888712BC1A710086FE24 /* Line.m */,
 			);
@@ -173,6 +178,7 @@
 				1D3623260D0F684500981E51 /* TouchTrackerAppDelegate.m in Sources */,
 				1714888512BC1A620086FE24 /* TouchDrawView.m in Sources */,
 				1714888812BC1A710086FE24 /* Line.m in Sources */,
+				178F52AF12C1D04100E4A585 /* FileHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

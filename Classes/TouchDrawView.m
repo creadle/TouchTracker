@@ -8,9 +8,12 @@
 
 #import "TouchDrawView.h"
 #import "Line.h"
+#import "FileHelpers.h"
 
 
 @implementation TouchDrawView
+
+@synthesize completedLines;
 
 - (id)initWithCoder:(NSCoder *)c
 {
@@ -19,6 +22,17 @@
 	completeLines = [[NSMutableArray alloc] init];
 	[self setMultipleTouchEnabled:YES];
 	return self;
+}
+
+- (id)initWithCoder:(NSCoder *)c 
+	  withLineArray:(NSMutableArray *)lineArray
+{
+	[super initWithCoder:c];
+	linesInProcess = [[NSMutableDictionary alloc] init];
+	[self setCompletedLines:lineArray];
+	[self setMultipleTouchEnabled:YES];
+	return self;
+	
 }
 
 /*
@@ -67,6 +81,15 @@
 }
 
 #pragma mark -
+#pragma mark Saving and restoring methods
+
+- (NSString *)lineArrayPath
+{
+	return pathInDocumentDirectory(@"Lines.data");
+}
+
+
+#pragma mark -
 #pragma mark Touch methods
 - (void)touchesBegan:(NSSet *)touches 
 		   withEvent:(UIEvent *)event
@@ -90,7 +113,6 @@
 		//add to dictionary
 		[linesInProcess setObject:newLine forKey:key];
 		[newLine release];
-		//memory leak here...will find later using Instruments
 	}
 }
 

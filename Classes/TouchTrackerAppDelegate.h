@@ -10,9 +10,12 @@
 
 @interface TouchTrackerAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+	
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+
+- (NSString *)lineArrayPath;
 
 @end
 
