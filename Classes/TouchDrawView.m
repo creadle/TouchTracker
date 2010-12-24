@@ -20,19 +20,17 @@
 	[super initWithCoder:c];
 	linesInProcess = [[NSMutableDictionary alloc] init];
 	completeLines = [[NSMutableArray alloc] init];
-	[self setMultipleTouchEnabled:YES];
-	return self;
-}
-
-- (id)initWithCoder:(NSCoder *)c 
-	  withLineArray:(NSMutableArray *)lineArray
-{
-	[super initWithCoder:c];
-	linesInProcess = [[NSMutableDictionary alloc] init];
-	[self setCompletedLines:lineArray];
-	[self setMultipleTouchEnabled:YES];
-	return self;
 	
+	NSString *linePath = [self lineArrayPath];
+	 
+	NSMutableArray *lineArray = [NSKeyedUnarchiver unarchiveObjectWithFile:linePath];
+	 
+	if (lineArray) {
+		NSLog(@"Entered if statement");
+		[self setCompletedLines:lineArray];
+	}
+	[self setMultipleTouchEnabled:YES];
+	return self;
 }
 
 /*
@@ -144,6 +142,12 @@
 		if (line) {
 			[completeLines addObject:line];
 			[linesInProcess removeObjectForKey:key];
+			
+			NSString *linePath = [self lineArrayPath];
+			
+			NSMutableArray *lineArray = [self completedLines];
+			[NSKeyedArchiver archiveRootObject:lineArray toFile:linePath];
+			
 		}
 	}
 	//redraw

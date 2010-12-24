@@ -18,4 +18,6 @@
 
 @property (nonatomic, retain) NSMutableArray *completedLines;
 
+- (NSString *)lineArrayPath;
+
 @end
