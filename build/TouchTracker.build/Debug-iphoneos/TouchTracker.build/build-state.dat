@@ -1,7 +1,7 @@
 TTouchTracker
 v7
 r0
-t314580007.825569
+t316574880.083150
 cCheck dependencies
 cCpResource build/Debug-iphoneos/TouchTracker.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/Info.plist" TouchTracker-Info.plist
@@ -12,12 +12,14 @@ cCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-nor
 cCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTrackerAppDelegate.o "/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchDrawView.o "/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/Line.o "/Volumes/USB DISK/source/TouchTracker/Classes/Line.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/FileHelpers.o "/Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cLd "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker" normal armv6
 cCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/main.o "/Volumes/USB DISK/source/TouchTracker/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTrackerAppDelegate.o "/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchDrawView.o "/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/Line.o "/Volumes/USB DISK/source/TouchTracker/Classes/Line.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/FileHelpers.o "/Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 cLd "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker" normal armv7
-cLd "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker" normal armv6
 cCreateUniversalBinary "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker" normal "armv6 armv7"
 cGenerateDSYMFile "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app.dSYM" "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker"
 cProcessProductPackaging "/Users/creadle/Library/MobileDevice/Provisioning Profiles/144E7249-FB1C-4E2C-81CB-6BD69E7CE524.mobileprovision" "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/embedded.mobileprovision"
@@ -95,15 +97,15 @@ s235
 i"Line.h"
 
 N/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.h
-c000000004D119B260000000000000179
-t1292999462
-s377
+c000000004D1435140000000000000197
+t1293169940
+s407
 i<UIKit/UIKit.h>
 
 N/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m
-c000000004D119B380000000000000D2B
-t1292999480
-s3371
+c000000004D1A11860000000000000F70
+t1293554054
+s3952
 i"TouchDrawView.h"
 i"Line.h"
 i"FileHelpers.h"
@@ -115,9 +117,9 @@ s399
 i<UIKit/UIKit.h>
 
 N/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m
-c000000004D119C180000000000000C11
-t1292999704
-s3089
+c000000004D1434580000000000000A3A
+t1293169752
+s2618
 i"TouchTrackerAppDelegate.h"
 
 N/Volumes/USB DISK/source/TouchTracker/MainWindow.xib
@@ -133,11 +135,11 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app
-t1292887206
+t1293554252
 s32768
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app.dSYM
-t1292887204
+t1293554250
 s32768
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/Info.plist
@@ -157,36 +159,36 @@ t1292885724
 s485
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker
-t1292887204
-s66304
+t1293554248
+s67552
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/embedded.mobileprovision
 t1292885728
 s7179
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/FileHelpers.o
-t2
-s0
+t1293554248
+s6472
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/Line.o
 t1292885726
 s7996
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchDrawView.o
-t1292887204
-s50920
+t1293554248
+s54828
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker
-t1292887204
-s23504
+t1293554248
+s24724
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker.LinkFileList
-c000000004D0FDEDA0000000000000210
-t1292885722
-s528
+c000000004D1A12460000000000000294
+t1293554246
+s660
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTrackerAppDelegate.o
-t1292885726
+t1293554248
 s49260
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/main.o
@@ -194,28 +196,28 @@ t1292885726
 s6444
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/FileHelpers.o
-t2
-s0
+t1293554248
+s6468
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/Line.o
 t1292885726
 s7964
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchDrawView.o
-t1292887202
-s50780
+t1293554248
+s54620
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker
-t1292887204
-s23504
+t1293554248
+s24724
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker.LinkFileList
-c000000004D0FDEDC0000000000000210
-t1292885724
-s528
+c000000004D1A12460000000000000294
+t1293554246
+s660
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTrackerAppDelegate.o
-t1292885726
+t1293554248
 s49204
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/main.o
@@ -247,18 +249,29 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies314580002#314580002#0(0"0(0#1#0"27866456492998768#0"0#
+lSLF07#2@18"Check dependencies316574878#316574879#0(0"0(0#1#0"27866456492998768#0"0#
 
 CCodeSign "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app"
-s314580006.143299
-e314580007.825463
+s316574879.083681
+e316574880.083104
 r1
 xCodeSign
 x/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app
-lSLF07#2@46"CodeSign build/Debug-iphoneos/TouchTracker.app314580006#314580007#0(0"0(0#0#75"/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app8600913472#683"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Christopher Readle (M3JQ8A3348)" "--resource-rules=/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/ResourceRules.plist" --entitlements "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker.xcent" "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app"0#
+o/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app: replacing existing signature
+lSLF07#2@46"CodeSign build/Debug-iphoneos/TouchTracker.app316574879#316574880#0(106"/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app: replacing existing signature0(0#0#75"/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app32933049022021680#683"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Christopher Readle (M3JQ8A3348)" "--resource-rules=/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/ResourceRules.plist" --entitlements "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker.xcent" "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app"0#
 
 CCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/FileHelpers.o "/Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
-r0
+s315247048.299920
+e315247048.357566
+r1
+xCompileC
+xbuild/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/FileHelpers.o
+x/Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m315247048#315247048#0(0"0(0#0#59"/Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m8615389312#1864"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv6" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-gvdwdqokirygzxetaznrekwkjtdz/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/FileHelpers.o"0#
 
 CCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/Line.o "/Volumes/USB DISK/source/TouchTracker/Classes/Line.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 s314578526.265990
@@ -274,8 +287,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@60"Compile /Volumes/USB DISK/source/TouchTracker/Classes/Line.m314578526#314578526#0(0"0(0#0#52"/Volumes/USB DISK/source/TouchTracker/Classes/Line.m8616352544#1850"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv6" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-gvdwdqokirygzxetaznrekwkjtdz/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/Line.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/Line.o"0#
 
 CCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchDrawView.o "/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314580002.843568
-e314580004.336822
+s315247047.787672
+e315247048.303813
 r1
 xCompileC
 xbuild/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchDrawView.o
@@ -284,11 +297,11 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@69"Compile /Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m314580002#314580004#0(0"0(0#0#61"/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m7665776580704888832#1868"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv6" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-gvdwdqokirygzxetaznrekwkjtdz/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchDrawView.o"0#
+lSLF07#2@69"Compile /Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m315247047#315247048#0(0"0(0#0#61"/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m8615370560#1868"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv6" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-gvdwdqokirygzxetaznrekwkjtdz/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchDrawView.o"0#
 
 CCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTrackerAppDelegate.o "/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314578526.114418
-e314578526.265898
+s315247047.786789
+e315247048.299705
 r1
 xCompileC
 xbuild/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTrackerAppDelegate.o
@@ -297,7 +310,9 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m314578526#314578526#0(0"0(0#0#71"/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m8614552864#1888"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv6" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-gvdwdqokirygzxetaznrekwkjtdz/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTrackerAppDelegate.o"0#
+o/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m:90: warning: incomplete implementation of class 'TouchTrackerAppDelegate'
+o/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m:90: warning: method definition for '-lineArrayPath' not found
+lSLF07#2@79"Compile /Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m315247047#315247048#0(280"/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m:90: warning: incomplete implementation of class 'TouchTrackerAppDelegate'/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m:90: warning: method definition for '-lineArrayPath' not found2(22@60"Incomplete implementation of class 'TouchTrackerAppDelegate'315247048#0#146#0(6@71"/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m314862552#90#0#90#0#38"incomplete implementation of class '*'0(22@48"Method definition for '-lineArrayPath' not found315247048#146#134#0(6@71"/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m314862552#90#0#90#0#35"method definition for '*' not found0(0#0#71"/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m7665776580704888832#1888"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv6" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-gvdwdqokirygzxetaznrekwkjtdz/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTrackerAppDelegate.o"0#
 
 CCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/main.o "/Volumes/USB DISK/source/TouchTracker/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
 s314578526.113598
@@ -313,7 +328,17 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@52"Compile /Volumes/USB DISK/source/TouchTracker/main.m314578526#314578526#0(0"0(0#0#44"/Volumes/USB DISK/source/TouchTracker/main.m8616284000#1842"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv6" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-gvdwdqokirygzxetaznrekwkjtdz/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/main.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/main.o"0#
 
 CCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/FileHelpers.o "/Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-r0
+s315247049.162225
+e315247049.552008
+r1
+xCompileC
+xbuild/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/FileHelpers.o
+x/Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m315247049#315247049#0(0"0(0#0#59"/Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m8613185280#1864"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv7" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-efqpycxuzsaecceswvyzbndddrxx/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/FileHelpers.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/FileHelpers.o"0#
 
 CCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/Line.o "/Volumes/USB DISK/source/TouchTracker/Classes/Line.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 s314578527.015469
@@ -329,8 +354,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@60"Compile /Volumes/USB DISK/source/TouchTracker/Classes/Line.m314578527#314578527#0(0"0(0#0#52"/Volumes/USB DISK/source/TouchTracker/Classes/Line.m8616949824#1850"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv7" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-efqpycxuzsaecceswvyzbndddrxx/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/Line.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/Line.o"0#
 
 CCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchDrawView.o "/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314580003.086826
-e314580003.171329
+s315247049.135287
+e315247049.551659
 r1
 xCompileC
 xbuild/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchDrawView.o
@@ -339,11 +364,11 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@69"Compile /Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m314580003#314580003#0(0"0(0#0#61"/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m8607299328#1868"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv7" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-efqpycxuzsaecceswvyzbndddrxx/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchDrawView.o"0#
+lSLF07#2@69"Compile /Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m315247049#315247049#0(0"0(0#0#61"/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m8614872736#1868"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv7" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-efqpycxuzsaecceswvyzbndddrxx/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchDrawView.o"0#
 
 CCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTrackerAppDelegate.o "/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314578526.609856
-e314578526.948372
+s315247048.303977
+e315247049.161826
 r1
 xCompileC
 xbuild/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTrackerAppDelegate.o
@@ -352,7 +377,9 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m314578526#314578526#0(0"0(0#0#71"/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m8618533024#1888"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv7" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-efqpycxuzsaecceswvyzbndddrxx/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTrackerAppDelegate.o"0#
+o/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m:90: warning: incomplete implementation of class 'TouchTrackerAppDelegate'
+o/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m:90: warning: method definition for '-lineArrayPath' not found
+lSLF07#2@79"Compile /Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m315247048#315247049#0(280"/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m:90: warning: incomplete implementation of class 'TouchTrackerAppDelegate'/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m:90: warning: method definition for '-lineArrayPath' not found2(22@60"Incomplete implementation of class 'TouchTrackerAppDelegate'315247049#0#146#0(6@71"/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m314862552#90#0#90#0#38"incomplete implementation of class '*'0(22@48"Method definition for '-lineArrayPath' not found315247049#146#134#0(6@71"/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m314862552#90#0#90#0#35"method definition for '*' not found0(0#0#71"/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m8613274144#1888"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-generated-files.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-own-target-headers.hmap" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-all-target-headers.hmap" -iquote "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker-project-headers.hmap" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-I/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/include" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources/armv7" "-I/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/DerivedSources" -include /var/folders/Jc/JcYRZiXVFHmPmmpSOalTeJO75NM/-Caches-/com.apple.Xcode.1451826582/SharedPrecompiledHeaders/TouchTracker_Prefix-efqpycxuzsaecceswvyzbndddrxx/TouchTracker_Prefix.pch -c "/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m" -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTrackerAppDelegate.o"0#
 
 CCompileC build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/main.o "/Volumes/USB DISK/source/TouchTracker/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
 s314578526.565490
@@ -385,43 +412,43 @@ x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceR
 lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist314578524#314578524#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist8617833184#501"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app"0#
 
 CCreateUniversalBinary "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker" normal "armv6 armv7"
-s314580004.703954
-e314580004.923077
+s315247049.714482
+e315247049.873085
 r1
 xCreateUniversalBinary
 x/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker
 xnormal
 xarmv6 armv7
-lSLF07#2@93"CreateUniversalBinary build/Debug-iphoneos/TouchTracker.app/TouchTracker normal "armv6 armv7"314580004#314580004#0(0"0(0#0#49"/Volumes/USB DISK/source/TouchTracker/armv6 armv78608958240#562"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker" "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker" -output "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker"0#
+lSLF07#2@93"CreateUniversalBinary build/Debug-iphoneos/TouchTracker.app/TouchTracker normal "armv6 armv7"315247049#315247049#0(0"0(0#0#49"/Volumes/USB DISK/source/TouchTracker/armv6 armv78615538976#562"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker" "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker" -output "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker"0#
 
 CGenerateDSYMFile "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app.dSYM" "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker"
-s314580004.923148
-e314580006.139675
+s315247049.873168
+e315247051.163014
 r1
 xGenerateDSYMFile
 x/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app.dSYM
 x/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker
-lSLF07#2@110"GenerateDSYMFile build/Debug-iphoneos/TouchTracker.app.dSYM build/Debug-iphoneos/TouchTracker.app/TouchTracker314580004#314580006#0(0"0(0#0#88"/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker8607530528#380"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker" -o "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app.dSYM"0#
+lSLF07#2@110"GenerateDSYMFile build/Debug-iphoneos/TouchTracker.app.dSYM build/Debug-iphoneos/TouchTracker.app/TouchTracker315247049#315247051#0(0"0(0#0#88"/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker8615195904#380"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker" -o "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app.dSYM"0#
 
 CLd "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker" normal armv6
-s314580004.336883
-e314580004.703810
+s315247048.357645
+e315247049.135191
 r1
 xLd
 x/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker
 xnormal
 xarmv6
-lSLF07#2@135"Link /Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker314580004#314580004#0(0"0(0#0#0"8605177312#894"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk "-L/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" -filelist "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker.LinkFileList" -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker"0#
+lSLF07#2@135"Link /Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker315247048#315247049#0(0"0(0#0#0"8615273600#894"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk "-L/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" -filelist "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker.LinkFileList" -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker"0#
 
 CLd "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker" normal armv7
-s314580003.171487
-e314580004.335338
+s315247049.552078
+e315247049.714398
 r1
 xLd
 x/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker
 xnormal
 xarmv7
-lSLF07#2@135"Link /Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker314580003#314580004#0(0"0(0#0#0"8607151712#894"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk "-L/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" -filelist "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker.LinkFileList" -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker"0#
+lSLF07#2@135"Link /Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker315247049#315247049#0(0"0(0#0#0"8615228544#894"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk "-L/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" "-F/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos" -filelist "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker.LinkFileList" -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker"0#
 
 CProcessInfoPlistFile "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/Info.plist" TouchTracker-Info.plist
 s314578524.791868
@@ -477,10 +504,10 @@ x/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/T
 lSLF07#2@190"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker.xcent314578529#314578530#0(0"0(0#0#115"/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker.xcent8618796768#449"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o "/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/TouchTracker.xcent"0#
 
 CTouch "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app"
-s314580006.139823
-e314580006.143171
+s315247051.163246
+e315247051.165804
 r1
 xTouch
 x/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app
-lSLF07#2@81"Touch /Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app314580006#314580006#0(0"0(0#0#0"8603978912#271"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app"0#
+lSLF07#2@81"Touch /Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app315247051#315247051#0(0"0(0#0#0"8614696256#271"    cd "/Volumes/USB DISK/source/TouchTracker"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app"0#
 

@@ -22,6 +22,7 @@
 	completeLines = [[NSMutableArray alloc] init];
 	
 	NSString *linePath = [self lineArrayPath];
+	NSLog(@"linePath = ", linePath);
 	 
 	NSMutableArray *lineArray = [NSKeyedUnarchiver unarchiveObjectWithFile:linePath];
 	 
