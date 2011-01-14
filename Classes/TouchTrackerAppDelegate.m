@@ -7,19 +7,29 @@
 //
 
 #import "TouchTrackerAppDelegate.h"
+#import "FileHelpers.h"
 
 @implementation TouchTrackerAppDelegate
 
-@synthesize window;
+@synthesize window, view;
 
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
+	
     // Override point for customization after application launch.
+	NSLog(@"Entered applicationDidFinishLaunchingWithOptions()");
     
+	NSString *lineArrayPath = [self getLineArrayPath];
+	NSMutableArray *lineArray = [NSKeyedUnarchiver unarchiveObjectWithFile:lineArrayPath];
+	
+	if (!lineArray) {
+		lineArray = [NSMutableArray	array];
+	}
+	[[self view] setCompletedLines:lineArray];
+	[[self view] setNeedsDisplay];
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -61,8 +71,19 @@
      Called when the application is about to terminate.
      See also applicationDidEnterBackground:.
      */
+	NSString *lineArrayPath = [self getLineArrayPath];
+	NSMutableArray *lineArray = [[self view] completedLines];
+	
+	[NSKeyedArchiver archiveRootObject:lineArray toFile:lineArrayPath];
 }
 
+#pragma mark -
+#pragma mark File methods
+
+- (NSString *)getLineArrayPath
+{
+	return pathInDocumentDirectory(@"Lines.data");
+}
 
 #pragma mark -
 #pragma mark Memory management
@@ -75,6 +96,7 @@
 
 
 - (void)dealloc {
+	[view release];
     [window release];
     [super dealloc];
 }
