@@ -8,6 +8,7 @@
 
 #import "TouchTrackerAppDelegate.h"
 #import "FileHelpers.h"
+#import	"TouchDrawView.h"
 
 @implementation TouchTrackerAppDelegate
 
@@ -20,7 +21,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
     // Override point for customization after application launch.
-	NSLog(@"Entered applicationDidFinishLaunchingWithOptions()");
     
 	NSString *lineArrayPath = [self getLineArrayPath];
 	NSMutableArray *lineArray = [NSKeyedUnarchiver unarchiveObjectWithFile:lineArrayPath];
@@ -28,7 +28,7 @@
 	if (!lineArray) {
 		lineArray = [NSMutableArray	array];
 	}
-	[[self view] setCompletedLines:lineArray];
+	[[self view] setCompleteLines:lineArray];
 	[[self view] setNeedsDisplay];
     [self.window makeKeyAndVisible];
     
@@ -49,6 +49,12 @@
      Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
      If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
      */
+	NSString *lineArrayPath = [self getLineArrayPath];
+	NSMutableArray *lineArray = [[self view] completeLines];
+	
+	[NSKeyedArchiver archiveRootObject:lineArray toFile:lineArrayPath];
+	
+	
 }
 
 
@@ -71,10 +77,7 @@
      Called when the application is about to terminate.
      See also applicationDidEnterBackground:.
      */
-	NSString *lineArrayPath = [self getLineArrayPath];
-	NSMutableArray *lineArray = [[self view] completedLines];
 	
-	[NSKeyedArchiver archiveRootObject:lineArray toFile:lineArrayPath];
 }
 
 #pragma mark -

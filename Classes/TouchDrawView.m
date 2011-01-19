@@ -12,14 +12,13 @@
 
 @implementation TouchDrawView
 
-@synthesize completedLines;
+@synthesize completeLines;
 
 - (id)initWithCoder:(NSCoder *)c
 {
-	NSLog(@"Entered initWithCoder()");
 	[super initWithCoder:c];
 	linesInProcess = [[NSMutableDictionary alloc] init];
-	completeLines = [[NSMutableArray alloc] init];
+	[self setCompleteLines:[[NSMutableArray alloc] init]];
 	[self setMultipleTouchEnabled:YES];
 	return self;
 }

@@ -16,6 +16,6 @@
 
 }
 
-@property (nonatomic, retain) NSMutableArray *completedLines;
+@property (nonatomic, retain) NSMutableArray *completeLines;
 
 @end

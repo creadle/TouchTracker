@@ -13,6 +13,7 @@
 	
 	CGPoint begin;
 	CGPoint end;
+	
 
 }
 
