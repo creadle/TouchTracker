@@ -13,5 +13,19 @@
 
 @synthesize begin, end;
 
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	//[super encodeWithCoder:aCoder];
+	[aCoder encodeCGPoint:begin forKey:@"LineBegin"];
+	[aCoder encodeCGPoint:end forKey:@"LineEnd"];
+}
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[self setBegin:[aDecoder decodeCGPointForKey:@"LineBegin"]];
+	[self setEnd:[aDecoder decodeCGPointForKey:@"LineEnd"]];
+	return self;
+}
+
 
 @end
