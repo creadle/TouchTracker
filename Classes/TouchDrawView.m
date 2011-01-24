@@ -16,7 +16,6 @@
 {
 	[super initWithCoder:c];
 	linesInProcess = [[NSMutableDictionary alloc] init];
-	circlesInProcess = [[NSMutableDictionary alloc] init];
 	completeLines = [[NSMutableArray alloc] init];
 	[self setMultipleTouchEnabled:YES];
 	return self;
@@ -56,12 +55,6 @@
 		CGContextAddLineToPoint(context, [line end].x, [line end].y);
 		CGContextStrokePath(context);
 	}
-	
-	for (NSValue *v in circlesInProcess) {
-		Circle *circle = [circlesInProcess objectForKey:v];
-		CGContextMoveToPoint(context, ([circle center].x - [circle radius]), [circle center].y);
-		CGContextAddArc(context, [circle center].x, [circle center].y, [circle radius], 0.0, 0.0, 1);
-	}
 		
 }
 
@@ -78,59 +71,26 @@
 - (void)touchesBegan:(NSSet *)touches 
 		   withEvent:(UIEvent *)event
 {
-	if ([touches count] == 2) {
-		NSEnumerator *enumerator = [touches objectEnumerator];
-		CGPoint firstPoint = [enumerator nextObject];
-		CGPoint secondPoint = [enumerator nextObject];
-		CGPoint centerPoint = [[CGPoint alloc] init];
-		float rad;
-		
-		//determine the coordinates of the center for the circle, as well as the radius
-		if (firstPoint.x > secondPoint.x) {
-			centerPoint.x = firstPoint.x - ((firstPoint.x - secondPoint.x)/2);
-			rad = centerPoint.x - secondPoint.x;
-		} else {
-			centerPoint.x = secondPoint.x - ((secondPoint.x - firstPoint.x)/2);
-			rad = centerPoint.x - firstPoint.x;
+	for (UITouch *t in touches) {
+		//double tap?
+		if ([t tapCount] > 1) {
+			[self clearAll];
+			return;
 		}
-		if (firstPoint.y > secondPoint.y) {
-			centerPoint.y = firstPoint.y - ((firstPoint.y - secondPoint.y)/2);
-		} else {
-			centerPoint.y = secondPoint.y - ((secondPoint - firstPoint.y)/2);
-		}
-
-		//set key using the center point of the circle
-		NSValue *key = [NSValue valueWithPointer:centerPoint];
 		
-		//create the circle
-		Circle *newCircle = [[Circle alloc] init];
-		[newCircle setCenter:centerPoint];
-		[newCircle setRadius:rad];
+		//set the key by wrapping in an nsvalue
+		NSValue *key = [NSValue valueWithPointer:t];
+		
+		//create a line for the value
+		CGPoint loc = [t locationInView:self];
+		Line *newLine = [[Line alloc] init];
+		[newLine setBegin:loc];
+		[newLine setEnd:loc];
 		
 		//add to dictionary
-		[circlesInProcess setObject:newCircle forKey:key];
-		[newCircle release];
-	}else {
-		for (UITouch *t in touches) {
-			//double tap?
-			if ([t tapCount] > 1) {
-				[self clearAll];
-				return;
-			}
-		
-			//set the key by wrapping in an nsvalue
-			NSValue *key = [NSValue valueWithPointer:t];
-		
-			//create a line for the value
-			CGPoint loc = [t locationInView:self];
-			Line *newLine = [[Line alloc] init];
-			[newLine setBegin:loc];
-			[newLine setEnd:loc];
-		
-			//add to dictionary
-			[linesInProcess setObject:newLine forKey:key];
-			[newLine release];
-		}
+		[linesInProcess setObject:newLine forKey:key];
+		[newLine release];
+		//memory leak here...will find later using Instruments
 	}
 }
 
