@@ -12,6 +12,7 @@
 @interface TouchDrawView : UIView {
 	
 	NSMutableDictionary *linesInProcess;
+	NSMutableDictionary *circlesInProcess;
 	NSMutableArray *completeLines;
 
 }
