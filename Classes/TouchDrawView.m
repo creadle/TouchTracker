@@ -8,6 +8,7 @@
 
 #import "TouchDrawView.h"
 #import "Line.h"
+#import "Circle.h"
 
 
 @implementation TouchDrawView
@@ -60,13 +61,14 @@
 	for (NSValue *v in circlesInProcess) {
 		Circle *circle = [circlesInProcess objectForKey:v];
 		CGContextMoveToPoint(context, ([circle center].x - [circle radius]), [circle center].y);
-		CGContextAddArc(context, [circle center].x, [circle center].y, [circle radius], 0.0, 0.0, 1);
+		CGContextAddArc(context, [circle center].x, [circle center].y, [circle radius], 0.0, 359.9, 1);
 	}
 		
 }
 
 - (void)clearAll
 {
+	[circlesInProcess removeAllObjects];
 	[linesInProcess removeAllObjects];
 	[completeLines removeAllObjects];
 	
@@ -79,10 +81,10 @@
 		   withEvent:(UIEvent *)event
 {
 	if ([touches count] == 2) {
-		NSEnumerator *enumerator = [touches objectEnumerator];
-		CGPoint firstPoint = [enumerator nextObject];
-		CGPoint secondPoint = [enumerator nextObject];
-		CGPoint centerPoint = [[CGPoint alloc] init];
+		NSArray *touchArray = [touches allObjects];
+		CGPoint firstPoint = [[touchArray objectAtIndex:0] locationInView:self];
+		CGPoint secondPoint = [[touchArray objectAtIndex:1] locationInView:self];
+		CGPoint centerPoint;
 		float rad;
 		
 		//determine the coordinates of the center for the circle, as well as the radius
@@ -96,11 +98,11 @@
 		if (firstPoint.y > secondPoint.y) {
 			centerPoint.y = firstPoint.y - ((firstPoint.y - secondPoint.y)/2);
 		} else {
-			centerPoint.y = secondPoint.y - ((secondPoint - firstPoint.y)/2);
+			centerPoint.y = secondPoint.y - ((secondPoint.y - firstPoint.y)/2);
 		}
 
 		//set key using the center point of the circle
-		NSValue *key = [NSValue valueWithPointer:centerPoint];
+		NSValue *key = [NSValue valueWithPointer:&centerPoint];
 		
 		//create the circle
 		Circle *newCircle = [[Circle alloc] init];
@@ -110,6 +112,8 @@
 		//add to dictionary
 		[circlesInProcess setObject:newCircle forKey:key];
 		[newCircle release];
+		//refresh display
+		[self setNeedsDisplay];
 	}else {
 		for (UITouch *t in touches) {
 			//double tap?
@@ -184,6 +188,7 @@
 #pragma mark Cleanup
 
 - (void)dealloc {
+	[circlesInProcess release];
 	[linesInProcess release];
 	[completeLines release];
     [super dealloc];
