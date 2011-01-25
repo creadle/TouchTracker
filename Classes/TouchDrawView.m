@@ -80,6 +80,7 @@
 - (void)touchesBegan:(NSSet *)touches 
 		   withEvent:(UIEvent *)event
 {
+	NSLog(@"Entered touches count == 2 of touchesBegan");
 	if ([touches count] == 2) {
 		NSArray *touchArray = [touches allObjects];
 		CGPoint firstPoint = [[touchArray objectAtIndex:0] locationInView:self];
@@ -102,7 +103,7 @@
 		}
 
 		//set key using the center point of the circle
-		NSValue *key = [NSValue valueWithPointer:&centerPoint];
+		NSValue *key = [NSValue valueWithPointer:touchArray];
 		
 		//create the circle
 		Circle *newCircle = [[Circle alloc] init];
@@ -141,31 +142,82 @@
 - (void)touchesMoved:(NSSet *)touches 
 		   withEvent:(UIEvent *)event
 {
-	for (UITouch *t in touches) {
-		NSValue *key = [NSValue valueWithPointer:t];
+	if ([touches count] == 2) {
+		NSLog(@"Entered touches count == 2 of touchesMoved");
+		//get a value from the touchArray
+		NSArray *touchArray = [touches allObjects];
+		NSValue *key = [NSValue valueWithPointer:touchArray];
 		
-		//find the line that corresponds to this touch
-		Line *line = [linesInProcess objectForKey:key];
+		Circle *circle = [circlesInProcess objectForKey:key];
 		
-		//update the line
-		CGPoint loc = [t locationInView:self];
-		[line setEnd:loc];
+		//get the new locations of the touches
+		CGPoint firstPoint = [[touchArray objectAtIndex:0] locationInView:self];
+		CGPoint secondPoint = [[touchArray objectAtIndex:1] locationInView:self];
+		
+		//the only thing that will really change is the radius, but we calculate that using the centerpoint, so we need to set them all up.
+		CGPoint centerPoint;
+		float rad;
+		
+		//determine the coordinates of the center for the circle, as well as the radius
+		if (firstPoint.x > secondPoint.x) {
+			centerPoint.x = firstPoint.x - ((firstPoint.x - secondPoint.x)/2);
+			rad = centerPoint.x - secondPoint.x;
+		} else {
+			centerPoint.x = secondPoint.x - ((secondPoint.x - firstPoint.x)/2);
+			rad = centerPoint.x - firstPoint.x;
+		}
+		if (firstPoint.y > secondPoint.y) {
+			centerPoint.y = firstPoint.y - ((firstPoint.y - secondPoint.y)/2);
+		} else {
+			centerPoint.y = secondPoint.y - ((secondPoint.y - firstPoint.y)/2);
+		}
+		
+		//update the circle
+		[circle setRadius:rad];
+
+	} else {
+		
+		for (UITouch *t in touches) {
+			NSValue *key = [NSValue valueWithPointer:t];
+			
+			//find the line that corresponds to this touch
+			Line *line = [linesInProcess objectForKey:key];
+			
+			//update the line
+			CGPoint loc = [t locationInView:self];
+			[line setEnd:loc];
+		}
 	}
-	//redraw
+		//redraw
 	[self setNeedsDisplay];
 }
 
 - (void)endTouches:(NSSet *)touches
 {
 	//remove from the dictionary
-	for (UITouch *t in touches) {
-		NSValue *key = [NSValue valueWithPointer:t];
-		Line *line = [linesInProcess objectForKey:key];
+	
+	if ([touches count] == 2) {
+		NSLog(@"Entered touches count == 2 of endTouches");
+		NSArray *touchArray = [touches allObjects];
+		NSValue *key = [NSValue valueWithPointer:touchArray];
 		
-		//if it's a double tap, line will be nil
-		if (line) {
-			[completeLines addObject:line];
-			[linesInProcess removeObjectForKey:key];
+		Circle *circle = [circlesInProcess objectForKey:key];
+		
+		if (circle) {
+			[completeLines addObject:circle];
+			[circlesInProcess removeObjectForKey:key];
+		}
+		
+	}else {
+		for (UITouch *t in touches) {
+			NSValue *key = [NSValue valueWithPointer:t];
+			Line *line = [linesInProcess objectForKey:key];
+			
+			//if it's a double tap, line will be nil
+			if (line) {
+				[completeLines addObject:line];
+				[linesInProcess removeObjectForKey:key];
+			}
 		}
 	}
 	//redraw

@@ -53,9 +53,9 @@
 	};
 	1714888412BC1A620086FE24 /* TouchDrawView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1171, 2379}}";
-			sepNavSelRange = "{3322, 0}";
-			sepNavVisRange = "{2409, 1275}";
+			sepNavIntBoundsRect = "{{0, 0}, {1171, 3159}}";
+			sepNavSelRange = "{3418, 7}";
+			sepNavVisRange = "{1579, 1348}";
 		};
 	};
 	1714888612BC1A710086FE24 /* Line.h */ = {
@@ -71,6 +71,16 @@
 			sepNavSelRange = "{228, 0}";
 			sepNavVisRange = "{0, 235}";
 		};
+	};
+	17318E6612EEAAF1003A255B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1714888412BC1A620086FE24 /* TouchDrawView.m */;
+		name = "TouchDrawView.m: 119";
+		rLen = 7;
+		rLoc = 3418;
+		rType = 0;
+		vrLen = 1348;
+		vrLoc = 1579;
 	};
 	175AC81412ED3690005A32B0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -92,21 +102,12 @@
 		vrLen = 343;
 		vrLoc = 0;
 	};
-	175AC81612ED3690005A32B0 /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "Incompatible types in initialization";
-		fRef = 1714888412BC1A620086FE24 /* TouchDrawView.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 84;
-		rType = 1;
-	};
 	175AC82912ED50B1005A32B0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1714888412BC1A620086FE24 /* TouchDrawView.m */;
 		name = "TouchDrawView.m: 115";
 		rLen = 0;
-		rLoc = 3322;
+		rLoc = 3375;
 		rType = 0;
 		vrLen = 1275;
 		vrLoc = 2409;
@@ -213,13 +214,13 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 317533500;
-			PBXWorkspaceStateSaveDate = 317533500;
+			PBXPerProjectTemplateStateSaveDate = 317600373;
+			PBXWorkspaceStateSaveDate = 317600373;
 		};
 		perUserProjectItems = {
+			17318E6612EEAAF1003A255B /* PBXTextBookmark */ = 17318E6612EEAAF1003A255B /* PBXTextBookmark */;
 			175AC81412ED3690005A32B0 /* PBXTextBookmark */ = 175AC81412ED3690005A32B0 /* PBXTextBookmark */;
 			175AC81512ED3690005A32B0 /* PBXTextBookmark */ = 175AC81512ED3690005A32B0 /* PBXTextBookmark */;
-			175AC81612ED3690005A32B0 /* XCBuildMessageTextBookmark */ = 175AC81612ED3690005A32B0 /* XCBuildMessageTextBookmark */;
 			175AC82912ED50B1005A32B0 /* PBXTextBookmark */ = 175AC82912ED50B1005A32B0 /* PBXTextBookmark */;
 			1766059912ED275100DEF183 /* PBXTextBookmark */ = 1766059912ED275100DEF183 /* PBXTextBookmark */;
 			1766059A12ED275100DEF183 /* PBXTextBookmark */ = 1766059A12ED275100DEF183 /* PBXTextBookmark */;
