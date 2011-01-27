@@ -71,45 +71,45 @@ t1292289928
 s7179
 
 N/Volumes/USB DISK/source/TouchTracker/Classes/Line.h
-c000000004D0FA4520000000000000155
-t1292870738
+c000000004D3CBFA40000000000000155
+t1295826852
 s341
 i<Foundation/Foundation.h>
 
 N/Volumes/USB DISK/source/TouchTracker/Classes/Line.m
-c000000004D0FA46400000000000000EB
-t1292870756
+c000000004D3CBFA400000000000000EB
+t1295826852
 s235
 i"Line.h"
 
 N/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.h
-c000000004D0FA496000000000000013A
-t1292870806
+c000000004D3E7468000000000000013A
+t1295938664
 s314
 i<UIKit/UIKit.h>
 
 N/Volumes/USB DISK/source/TouchTracker/Classes/TouchDrawView.m
-c000000004D0FE49C0000000000000D30
-t1292887196
+c000000004D3E74680000000000000D30
+t1295938664
 s3376
 i"TouchDrawView.h"
 i"Line.h"
 
 N/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.h
-c000000004D0BE2BC000000000000016F
-t1292624572
+c000000004D3CBFA8000000000000016F
+t1295826856
 s367
 i<UIKit/UIKit.h>
 
 N/Volumes/USB DISK/source/TouchTracker/Classes/TouchTrackerAppDelegate.m
-c000000004D0BE2BC00000000000009FB
-t1292624572
+c000000004D3CBFAA00000000000009FB
+t1295826858
 s2555
 i"TouchTrackerAppDelegate.h"
 
 N/Volumes/USB DISK/source/TouchTracker/MainWindow.xib
-c000000004D0FA5560000000000004C37
-t1292870998
+c000000004D3CBFAA0000000000004C37
+t1295826858
 s19511
 
 N/Volumes/USB DISK/source/TouchTracker/TouchTracker_Prefix.pch
@@ -120,11 +120,11 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app
-t1292887206
+t1295826860
 s32768
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app.dSYM
-t1292887204
+t1295474038
 s32768
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/Info.plist
@@ -132,7 +132,7 @@ t1292885724
 s801
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/MainWindow.nib
-t1292885724
+t1295826860
 s1140
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/PkgInfo
@@ -144,32 +144,32 @@ t1292885724
 s485
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/TouchTracker
-t1292887204
-s52176
+t1295826860
+s66304
 
 N/Volumes/USB DISK/source/TouchTracker/build/Debug-iphoneos/TouchTracker.app/embedded.mobileprovision
 t1292885728
 s7179
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/Line.o
-t1292885726
+t1295826864
 s7996
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchDrawView.o
-t1292887204
+t1295826864
 s50920
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker
-t1292887204
+t1295826864
 s23504
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTracker.LinkFileList
-c000000004D0FDEDA0000000000000210
-t1292885722
+c000000004D3CBFB00000000000000210
+t1295826864
 s528
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/TouchTrackerAppDelegate.o
-t1292885726
+t1295826866
 s49260
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv6/main.o
@@ -177,24 +177,24 @@ t1292885726
 s6444
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/Line.o
-t1292885726
+t1295826866
 s7964
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchDrawView.o
-t1292887202
+t1295826866
 s50780
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker
-t1292887204
+t1295826866
 s23504
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTracker.LinkFileList
-c000000004D0FDEDC0000000000000210
-t1292885724
+c000000004D3CBFB20000000000000210
+t1295826866
 s528
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/TouchTrackerAppDelegate.o
-t1292885726
+t1295826866
 s49204
 
 N/Volumes/USB DISK/source/TouchTracker/build/TouchTracker.build/Debug-iphoneos/TouchTracker.build/Objects-normal/armv7/main.o

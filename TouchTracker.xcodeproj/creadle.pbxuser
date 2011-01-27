@@ -53,9 +53,9 @@
 	};
 	1714888412BC1A620086FE24 /* TouchDrawView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {905, 1937}}";
+			sepNavIntBoundsRect = "{{0, 0}, {905, 1950}}";
 			sepNavSelRange = "{1503, 0}";
-			sepNavVisRange = "{1338, 452}";
+			sepNavVisRange = "{1338, 436}";
 		};
 	};
 	1714888612BC1A710086FE24 /* Line.h */ = {
@@ -71,6 +71,16 @@
 			sepNavSelRange = "{228, 0}";
 			sepNavVisRange = "{0, 235}";
 		};
+	};
+	1752065212F11FE6006E0565 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1714888412BC1A620086FE24 /* TouchDrawView.m */;
+		name = "TouchDrawView.m: 58";
+		rLen = 0;
+		rLoc = 1503;
+		rType = 0;
+		vrLen = 436;
+		vrLoc = 1338;
 	};
 	17871C9C12C02D88004EB717 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -111,16 +121,6 @@
 		rType = 0;
 		vrLen = 314;
 		vrLoc = 0;
-	};
-	178B6F9412C01C08002C052C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1714888412BC1A620086FE24 /* TouchDrawView.m */;
-		name = "TouchDrawView.m: 63";
-		rLen = 0;
-		rLoc = 1503;
-		rType = 0;
-		vrLen = 385;
-		vrLoc = 1403;
 	};
 	1D6058900D05DD3D006BFB54 /* TouchTracker */ = {
 		activeExec = 0;
@@ -163,15 +163,15 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 314579984;
-			PBXWorkspaceStateSaveDate = 314579984;
+			PBXPerProjectTemplateStateSaveDate = 317792173;
+			PBXWorkspaceStateSaveDate = 317792173;
 		};
 		perUserProjectItems = {
+			1752065212F11FE6006E0565 /* PBXTextBookmark */ = 1752065212F11FE6006E0565 /* PBXTextBookmark */;
 			17871C9C12C02D88004EB717 /* PBXTextBookmark */ = 17871C9C12C02D88004EB717 /* PBXTextBookmark */;
 			178B6F9012C01C08002C052C /* PBXTextBookmark */ = 178B6F9012C01C08002C052C /* PBXTextBookmark */;
 			178B6F9112C01C08002C052C /* PBXTextBookmark */ = 178B6F9112C01C08002C052C /* PBXTextBookmark */;
 			178B6F9212C01C08002C052C /* PBXTextBookmark */ = 178B6F9212C01C08002C052C /* PBXTextBookmark */;
-			178B6F9412C01C08002C052C /* PBXTextBookmark */ = 178B6F9412C01C08002C052C /* PBXTextBookmark */;
 		};
 		sourceControlManager = 1714888112BC1A5D0086FE24 /* Source Control */;
 		userBuildSettings = {
