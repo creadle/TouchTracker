@@ -1,5 +1,35 @@
 // !$*UTF8*$!
 {
+	1708DF7D12F21A4A007C89F8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* TouchTrackerAppDelegate.m */;
+		name = "TouchTrackerAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 447;
+		vrLoc = 0;
+	};
+	1708DF9512F229CC007C89F8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1714888412BC1A620086FE24 /* TouchDrawView.m */;
+		name = "TouchDrawView.m: 81";
+		rLen = 0;
+		rLoc = 1893;
+		rType = 0;
+		vrLen = 438;
+		vrLoc = 1628;
+	};
+	1708DF9F12F28E97007C89F8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1714888412BC1A620086FE24 /* TouchDrawView.m */;
+		name = "TouchDrawView.m: 81";
+		rLen = 0;
+		rLoc = 1893;
+		rType = 0;
+		vrLen = 511;
+		vrLoc = 1896;
+	};
 	1714887512BC1A3E0086FE24 /* TouchTracker */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -29,6 +59,24 @@
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+			$cs = 1;
+			$ds = 1;
+			$eax = 1;
+			$ebp = 1;
+			$ebx = 1;
+			$ecx = 1;
+			$edi = 1;
+			$edx = 1;
+			$eflags = 1;
+			$eip = 1;
+			$es = 1;
+			$esi = 1;
+			$esp = 1;
+			$fs = 1;
+			$gs = 1;
+			$ss = 1;
+		};
 	};
 	1714888112BC1A5D0086FE24 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -53,9 +101,9 @@
 	};
 	1714888412BC1A620086FE24 /* TouchDrawView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {905, 1950}}";
-			sepNavSelRange = "{1503, 0}";
-			sepNavVisRange = "{1338, 436}";
+			sepNavIntBoundsRect = "{{0, 0}, {1079, 2262}}";
+			sepNavSelRange = "{1893, 0}";
+			sepNavVisRange = "{1896, 511}";
 		};
 	};
 	1714888612BC1A710086FE24 /* Line.h */ = {
@@ -71,26 +119,6 @@
 			sepNavSelRange = "{228, 0}";
 			sepNavVisRange = "{0, 235}";
 		};
-	};
-	1752065212F11FE6006E0565 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1714888412BC1A620086FE24 /* TouchDrawView.m */;
-		name = "TouchDrawView.m: 58";
-		rLen = 0;
-		rLoc = 1503;
-		rType = 0;
-		vrLen = 436;
-		vrLoc = 1338;
-	};
-	17871C9C12C02D88004EB717 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1714888412BC1A620086FE24 /* TouchDrawView.m */;
-		name = "TouchDrawView.m: 58";
-		rLen = 0;
-		rLoc = 1503;
-		rType = 0;
-		vrLen = 452;
-		vrLoc = 1338;
 	};
 	178B6F9012C01C08002C052C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -122,6 +150,13 @@
 		vrLen = 314;
 		vrLoc = 0;
 	};
+	1D3623250D0F684500981E51 /* TouchTrackerAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 988}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 447}";
+		};
+	};
 	1D6058900D05DD3D006BFB54 /* TouchTracker */ = {
 		activeExec = 0;
 		executables = (
@@ -131,10 +166,12 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 1714887512BC1A3E0086FE24 /* TouchTracker */;
-		activeSDKPreference = iphoneos4.2;
+		activeSDKPreference = iphonesimulator4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* TouchTracker */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* TouchTracker */,
+		);
+		breakpoints = (
 		);
 		codeSenseManager = 1714888212BC1A5D0086FE24 /* Code sense */;
 		executables = (
@@ -146,7 +183,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					727,
+					901,
 					20,
 					48,
 					43,
@@ -163,12 +200,13 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 317792173;
-			PBXWorkspaceStateSaveDate = 317792173;
+			PBXPerProjectTemplateStateSaveDate = 317854599;
+			PBXWorkspaceStateSaveDate = 317854599;
 		};
 		perUserProjectItems = {
-			1752065212F11FE6006E0565 /* PBXTextBookmark */ = 1752065212F11FE6006E0565 /* PBXTextBookmark */;
-			17871C9C12C02D88004EB717 /* PBXTextBookmark */ = 17871C9C12C02D88004EB717 /* PBXTextBookmark */;
+			1708DF7D12F21A4A007C89F8 /* PBXTextBookmark */ = 1708DF7D12F21A4A007C89F8 /* PBXTextBookmark */;
+			1708DF9512F229CC007C89F8 /* PBXTextBookmark */ = 1708DF9512F229CC007C89F8 /* PBXTextBookmark */;
+			1708DF9F12F28E97007C89F8 /* PBXTextBookmark */ = 1708DF9F12F28E97007C89F8 /* PBXTextBookmark */;
 			178B6F9012C01C08002C052C /* PBXTextBookmark */ = 178B6F9012C01C08002C052C /* PBXTextBookmark */;
 			178B6F9112C01C08002C052C /* PBXTextBookmark */ = 178B6F9112C01C08002C052C /* PBXTextBookmark */;
 			178B6F9212C01C08002C052C /* PBXTextBookmark */ = 178B6F9212C01C08002C052C /* PBXTextBookmark */;

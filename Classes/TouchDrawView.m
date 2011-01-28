@@ -71,7 +71,27 @@
 - (void)touchesBegan:(NSSet *)touches 
 		   withEvent:(UIEvent *)event
 {
-	for (UITouch *t in touches) {
+	
+	UITouch *touch = [[event allTouches] anyObject];
+	
+	//if double tap, clear the display
+	if ([touch tapCount] > 1) {
+		[self clearAll];
+		return;
+	}
+	
+	CGPoint loc1 = CGPointMake(100, 100);
+	CGPoint loc2 = CGPointMake(200, 200);
+	
+	Line *newLine = [[Line alloc] init];
+	[newLine setBegin:loc1];
+	[newLine setEnd:loc2];
+	
+	NSValue *key = [NSValue valueWithPointer:touch];
+			
+	[linesInProcess setObject:newLine forKey:key];
+	
+/*	for (UITouch *t in touches) {
 		//double tap?
 		if ([t tapCount] > 1) {
 			[self clearAll];
@@ -91,7 +111,7 @@
 		[linesInProcess setObject:newLine forKey:key];
 		[newLine release];
 		//memory leak here...will find later using Instruments
-	}
+	}*/
 }
 
 - (void)touchesMoved:(NSSet *)touches 
