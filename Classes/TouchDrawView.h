@@ -13,6 +13,8 @@
 	
 	NSMutableDictionary *linesInProcess;
 	NSMutableArray *completeLines;
+	NSMutableDictionary *incompleteCircles;
+	NSMutableArray *completeCircles;
 
 }
 
