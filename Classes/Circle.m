@@ -16,7 +16,7 @@
 -(void)determineCenterPointAndRadius
 {
 	//get the touches
-	NSArray touchArray = [touches allValues];
+	NSArray *touchArray = [NSArray arrayWithArray:[touches allValues]];
 	CGPoint firstTouch = [[touchArray objectAtIndex:0] CGPointValue];
 	CGPoint secondTouch = [[touchArray objectAtIndex:1] CGPointValue];
 	
@@ -40,6 +40,12 @@
 
 	//[self setCenter:CGPointMake(200, 200)];
 	//[self setRadius:100.0];
+}
+
+-(void)dealloc
+{
+	[touches release];
+	[super dealloc];
 }
 
 @end

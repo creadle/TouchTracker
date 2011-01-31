@@ -19,7 +19,7 @@
 
 @property (nonatomic) CGPoint center;
 @property (nonatomic) float radius;
-@property (nonatomic) NSMutableDictionary *touches;
+@property (nonatomic, retain) NSMutableDictionary *touches;
 
 -(void)determineCenterPointAndRadius;
 
