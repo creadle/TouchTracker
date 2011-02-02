@@ -7,41 +7,49 @@
 //
 
 #import "Circle.h"
+#include <stdlib.h>
 
 
 @implementation Circle
 
-@synthesize center, radius, touches;
+@synthesize center, radius, touches, touchesEnded;
+
+/*-(id)init
+{
+	NSMutableDictionary *touches = [[NSMutableDictionary alloc] init];
+	return self;
+}*/
 
 -(void)determineCenterPointAndRadius
 {
 	//get the touches
-	NSArray *touchArray = [NSArray arrayWithArray:[touches allValues]];
-	CGPoint firstTouch = [[touchArray objectAtIndex:0] CGPointValue];
-	CGPoint secondTouch = [[touchArray objectAtIndex:1] CGPointValue];
+	NSArray *touchArray = [NSArray arrayWithArray:[[self touches] allValues]];
 	
-	//determine the x and y coordinates of the centerpoint and the radius using the touches as the corners of a bounding box
-	CGFloat centerPointX, centerPointY;
-	if (firstTouch.x > secondTouch.x) {
-		centerPointX = firstTouch.x - ((firstTouch.x - secondTouch.x) /2);
-		[self setRadius: firstTouch.x - [self center].x];
+	if ([touchArray count] == 2) {
+		CGPoint firstTouch = [[touchArray objectAtIndex:0] CGPointValue];
+		CGPoint secondTouch = [[touchArray objectAtIndex:1] CGPointValue];
+		
+		
+		//determine the x and y coordinates of the centerpoint and the radius using the touches as the corners of a bounding box
+		CGFloat centerPointX, centerPointY;
+		if (firstTouch.x > secondTouch.x) {
+			centerPointX = firstTouch.x - ((firstTouch.x - secondTouch.x) /2);
+			[self setRadius: firstTouch.x - [self center].x];
+		}else {
+			centerPointX = secondTouch.x - ((secondTouch.x - firstTouch.x) /2);
+			[self setRadius:secondTouch.x - [self center].x];
+		}
+		if (firstTouch.y > secondTouch.y) {
+			centerPointY = firstTouch.y - ((firstTouch.y - secondTouch.y) /2);
+		}else {
+			centerPointY = secondTouch.y - ((secondTouch.y - firstTouch.y) /2);
+		}
+		[self setCenter:CGPointMake(centerPointX, centerPointY)];
 	}else {
-		centerPointX = secondTouch.x - ((secondTouch.x - firstTouch.x) /2);
-		[self setRadius:secondTouch.x - [self center].x];
+		[self setCenter:CGPointMake(arc4random() % 320, arc4random() % 480)];
+		[self setRadius:arc4random() % 200];
 	}
-	if (firstTouch.y > secondTouch.y) {
-		centerPointY = firstTouch.y - ((firstTouch.y - secondTouch.y) /2);
-	}else {
-		centerPointY = secondTouch.y - ((secondTouch.y - firstTouch.y) /2);
-	}
-	[self setCenter:CGPointMake(centerPointX, centerPointY)];
-
-
-
-	//[self setCenter:CGPointMake(200, 200)];
-	//[self setRadius:100.0];
 }
-
 -(void)dealloc
 {
 	[touches release];

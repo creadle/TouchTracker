@@ -51,7 +51,7 @@
 	}
 	//so are completed circles
 	for (Circle *circle in completeCircles) {
-		CGContextAddArc(context, [circle center].x, [circle center].y, [circle radius], 0.0, 360.0, 1);
+		CGContextAddArc(context, [circle center].x, [circle center].y, [circle radius], 0.0, 2 * M_PI, 1);
 		CGContextStrokePath(context);
 	}
 	
@@ -106,7 +106,8 @@
 			for (NSValue *v in linesInProcess) {
 				Line *line = [linesInProcess objectForKey:v];
 				CGPoint firstPoint = [line begin];
-				[[newCircle touches] setObject:[NSValue valueWithCGPoint:firstPoint] forKey:v];
+				[newCircle setTouches:[[NSMutableDictionary alloc] init]];
+				[[newCircle touches]setObject:[NSValue valueWithCGPoint:firstPoint] forKey:v];
 				[linesInProcess removeObjectForKey:v];
 			}
 			
@@ -114,6 +115,7 @@
 			[newCircle determineCenterPointAndRadius];
 			NSValue *circleKey = [NSValue valueWithCGPoint:[newCircle center]];
 			[incompleteCircles setObject:newCircle forKey:circleKey];
+			[newCircle setTouchesEnded:0];
 			[newCircle release];
 			
 		} else {
@@ -176,7 +178,8 @@
 				for (NSValue *i in incompleteCircles) {
 					Circle *circle = [incompleteCircles objectForKey:i];
 					if ([[circle touches] objectForKey: key]) {
-						if ([event allTouches] == nil) {
+						[circle setTouchesEnded:[circle touchesEnded] + 1];
+						if ([circle touchesEnded] == 2) {
 							[completeCircles addObject:circle];
 							[incompleteCircles removeObjectForKey:i];
 						}

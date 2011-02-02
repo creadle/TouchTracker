@@ -14,12 +14,14 @@
 	NSMutableDictionary *touches;
 	CGPoint center;
 	float radius;
+	int touchesEnded;
 	
 }
 
 @property (nonatomic) CGPoint center;
 @property (nonatomic) float radius;
 @property (nonatomic, retain) NSMutableDictionary *touches;
+@property (nonatomic) int touchesEnded;
 
 -(void)determineCenterPointAndRadius;
 
